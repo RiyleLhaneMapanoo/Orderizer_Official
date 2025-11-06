@@ -1,0 +1,33 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MailKit" Version="4.14.1" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="9.0.10" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Ord_Business">
+      <HintPath>..\Ord_Business\bin\Debug\net8.0\Ord_Business.dll</HintPath>
+    </Reference>
+    <Reference Include="Ord_Common">
+      <HintPath>..\Ord_Business\bin\Debug\net8.0\Ord_Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Ord_Data">
+      <HintPath>..\Ord_Business\bin\Debug\net8.0\Ord_Data.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Update="appsettings.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+</Project>

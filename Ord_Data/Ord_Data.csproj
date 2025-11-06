@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Library</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="Ord_Common">
+      <HintPath>..\Ord_Common\bin\Debug\net8.0\Ord_Common.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

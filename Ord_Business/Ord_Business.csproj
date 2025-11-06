@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Library</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MailKit" Version="4.14.1" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="9.0.10" />
+    <PackageReference Include="MimeKit" Version="4.14.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Ord_Common">
+      <HintPath>..\Ord_Data\bin\Debug\net8.0\Ord_Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Ord_Data">
+      <HintPath>..\Ord_Data\bin\Debug\net8.0\Ord_Data.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
